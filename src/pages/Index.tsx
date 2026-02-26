@@ -29,7 +29,7 @@ const HeroSection = () => (
         alt="Fresh bread and pastries at our bakery"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
     </div>
     <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-32">
       <div className="max-w-2xl animate-fade-in-up">
