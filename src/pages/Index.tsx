@@ -25,7 +25,7 @@ const HeroSection = () => (
   <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
     <div className="absolute inset-0">
       <img
-        src="/images/hero-bakery.jpg"
+        src={`${import.meta.env.BASE_URL}/images/hero-bakery.jpg`}
         alt="Fresh bread and pastries at our bakery"
         className="w-full h-full object-cover"
       />
@@ -52,9 +52,9 @@ const HeroSection = () => (
 );
 
 const products = [
-  { name: "Artisan Cakes", description: "Layered perfection for every celebration", image: "/images/cake.jpg" },
-  { name: "Sourdough Breads", description: "Slow-fermented with wild yeast cultures", image: "/images/bread.jpg" },
-  { name: "Butter Cookies", description: "Crisp, golden & irresistibly delicious", image: "/images/cookies.jpg" },
+  { name: "Artisan Cakes", description: "Layered perfection for every celebration", image: `${import.meta.env.BASE_URL}/images/cake.jpg` },
+  { name: "Sourdough Breads", description: "Slow-fermented with wild yeast cultures", image: `${import.meta.env.BASE_URL}/images/bread.jpg` },
+  { name: "Butter Cookies", description: "Crisp, golden & irresistibly delicious", image: `${import.meta.env.BASE_URL}/images/cookies.jpg` },
 ];
 
 const FeaturedProducts = () => (
@@ -85,7 +85,7 @@ const AboutSection = () => (
   <section id="about" className="section-padding bg-background">
     <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
       <div className="rounded-2xl overflow-hidden bakery-shadow-lg">
-        <img src="/images/about-bakery.jpg" alt="Inside our bakery" className="w-full h-full object-cover" />
+        <img src={`${import.meta.env.BASE_URL}/images/about-bakery.jpg`} alt="Inside our bakery" className="w-full h-full object-cover" />
       </div>
       <div>
         <span className="text-accent font-body text-sm tracking-[0.2em] uppercase">Our Story</span>
@@ -103,10 +103,10 @@ const AboutSection = () => (
 );
 
 const bestSellers = [
-  { name: "Butter Croissant", price: "$3.50", image: "/images/croissant.jpg", badge: "Best Seller" },
-  { name: "Chocolate Cake", price: "$28.00", image: "/images/cake.jpg", badge: "Popular" },
-  { name: "French Macarons", price: "$12.00", image: "/images/macarons.jpg", badge: "New" },
-  { name: "Cinnamon Rolls", price: "$4.50", image: "/images/cinnamon-rolls.jpg", badge: "Fan Favorite" },
+  { name: "Butter Croissant", price: "$3.50", image: `${import.meta.env.BASE_URL}/images/croissant.jpg`, badge: "Best Seller" },
+  { name: "Chocolate Cake", price: "$28.00", image: `${import.meta.env.BASE_URL}/images/cake.jpg`, badge: "Popular" },
+  { name: "French Macarons", price: "$12.00", image: `${import.meta.env.BASE_URL}/images/macarons.jpg`, badge: "New" },
+  { name: "Cinnamon Rolls", price: "$4.50", image: `${import.meta.env.BASE_URL}/images/cinnamon-rolls.jpg`, badge: "Fan Favorite" },
 ];
 
 const BestSellers = () => (
@@ -170,12 +170,12 @@ const TestimonialsSection = () => (
 );
 
 const instagramImages = [
-  "/images/croissant.jpg",
-  "/images/cake.jpg",
-  "/images/macarons.jpg",
-  "/images/bread.jpg",
-  "/images/cinnamon-rolls.jpg",
-  "/images/cookies.jpg",
+  `${import.meta.env.BASE_URL}/images/croissant.jpg`,
+  `${import.meta.env.BASE_URL}/images/cake.jpg`,
+  `${import.meta.env.BASE_URL}/images/macarons.jpg`,
+  `${import.meta.env.BASE_URL}/images/bread.jpg`,
+  `${import.meta.env.BASE_URL}/images/cinnamon-rolls.jpg`,
+  `${import.meta.env.BASE_URL}/images/cookies.jpg`,
 ];
 
 const InstagramSection = () => (
